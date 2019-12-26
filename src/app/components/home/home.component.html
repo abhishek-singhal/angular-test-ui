@@ -1,0 +1,13 @@
+<ngb-carousel *ngIf="images"
+              [pauseOnHover]="false">
+  <ng-template ngbSlide
+               *ngFor="let image of images">
+    <div class="ngb-carousel">
+      <img [src]="image"
+           alt="Olympian Rail">
+    </div>
+    <div class="carousel-caption">
+      <h3 [routerLink]="['/test']">About Us</h3>
+    </div>
+  </ng-template>
+</ngb-carousel>
